@@ -50,3 +50,11 @@
 .lightText {
   color: #666;
 }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  font-size: 0.8rem;
+  background: #FFFFFF;
+}

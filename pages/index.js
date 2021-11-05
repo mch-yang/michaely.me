@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
+const YEAR = new Date().getFullYear()
+
 export default function Home() {
   return (
     <Layout home>
@@ -18,6 +20,11 @@ export default function Home() {
           In the meantime, you can find me on{' '}
           <a href="https://linkedin.com/in/chengzhouyang">LinkedIn</a> or {' '}
           <a href="https://github.com/mch-yang">GitHub</a>.
+        </p>
+      </section>
+      <section className={utilStyles.footer}>
+        <p>
+          <time>{YEAR}</time> © Michael Yang
         </p>
       </section>
     </Layout>
