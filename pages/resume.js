@@ -4,8 +4,8 @@ import ResumeItem from "../components/ResumeItem";
 export default function Resume() {
   return (
     <Container
-      title="Resume – Michael Yang"
-      description="Experience"
+      title="Michael Yang – Resume"
+      description="Resume"
     >
 
     <div className="max-w-6xl mx-auto w-auto mb-8 px-20">
