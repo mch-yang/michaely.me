@@ -8,7 +8,7 @@ export default function Resume() {
       description="Resume"
     >
 
-    <div className="max-w-6xl mx-auto w-auto mb-8 px-20">
+    <div className="max-w-6xl mx-auto w-auto px-4 md:px-20">
         <h4 className="text-xl font-medium md:text-left text-center text-gray-900 dark:text-gray-100">
           Work Experience
         </h4>
@@ -20,7 +20,7 @@ export default function Resume() {
         />
     </div>
 
-    <div className="max-w-6xl mx-auto w-auto mb-8 px-20">
+    <div className="max-w-6xl mx-auto w-auto px-4 md:px-20">
         <h4 className="text-xl font-medium md:text-left text-center text-gray-900 dark:text-gray-100">
           Education
         </h4>
