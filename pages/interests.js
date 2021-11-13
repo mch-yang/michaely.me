@@ -1,10 +1,10 @@
 import Container from "../components/Container";
 
-export default function Home() {
+export default function Interests() {
   return (
     <Container
       title="Michael Yang"
-      description="Home"
+      description="Interests"
     >
     </Container>
   );
