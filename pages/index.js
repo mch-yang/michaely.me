@@ -12,19 +12,19 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hey, my name is Michael and I'm a Data Scientist. 
-          I'm currently learning about web development, and will be building this personal website where I 
-          eventually plan on posting about stuff I'm working on and things I enjoy. More to come soon...
+          Hey, my name is Michael. I'm a Data Scientist, and am currently learning about web development in my free time. 
+          I'm planning on building my personal website here over the next few months, where I will eventually be posting about stuff I'm working on and things I enjoy. 
+          More to come soon...
         </p>
         <p>
           In the meantime, you can find me on{' '}
-          <a href="https://linkedin.com/in/chengzhouyang">LinkedIn</a> or {' '}
-          <a href="https://github.com/mch-yang">GitHub</a>.
+          <a href="https://linkedin.com/in/chengzhouyang">LinkedIn</a>,{' '}
+          or follow my progress on <a href="https://github.com/mch-yang">GitHub</a>.
         </p>
       </section>
       <section className={utilStyles.footer}>
         <p>
-          <time>{YEAR}</time> © Michael Yang
+          © <time>{YEAR}</time> Michael Yang
         </p>
       </section>
     </Layout>
