@@ -6,6 +6,7 @@ import NextLink from 'next/link';
 import cn from 'classnames';
 
 import Footer from './Footer';
+import MobileMenu from './MobileMenu';
 
 function NavItem({ href, text }) {
   const router = useRouter();
@@ -29,7 +30,7 @@ function NavItem({ href, text }) {
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -45,7 +46,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className='bg-gray-50 dark:bg-gray-900'>
+    <div className='bg-gray-50 dark:bg-zinc-900'>
       <Head>
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
@@ -61,11 +62,12 @@ export default function Container(props) {
         <meta name="twitter:description" content={meta.description} />
       </Head>
       <div className="flex flex-col justify-center px-8">
-        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
+        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-gray-50  dark:bg-zinc-900 bg-opacity-60 dark:text-gray-100">
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
           <div className="ml-[-0.60rem]">
+            <MobileMenu/>
             <NavItem href="/" text="Home" />
             <NavItem href="/page" text="Page" />
           </div>
@@ -74,7 +76,7 @@ export default function Container(props) {
             type="button"
             className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
             onClick={() =>
-              setTheme(theme === 'dark' ? 'light' : 'dark')
+              setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
           >
             {mounted && (
@@ -85,7 +87,7 @@ export default function Container(props) {
                 stroke="currentColor"
                 className="w-5 h-5 text-gray-800 dark:text-gray-200"
               >
-                {theme === 'dark' ? (
+                {resolvedTheme === 'dark' ? (
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -107,7 +109,7 @@ export default function Container(props) {
       </div>
       <main
         id="skip"
-        className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900"
+        className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-zinc-900"
       >
         {children}
         <Footer />
