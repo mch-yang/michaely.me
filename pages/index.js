@@ -1,32 +1,24 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-
-const YEAR = new Date().getFullYear()
+import Container from '../components/Container'
 
 export default function Home() {
-  return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Hey, my name is Michael. I'm a Data Scientist, and am currently learning about web development in my free time. 
-          I'm planning on building my personal website here over the next few months, where I will eventually be posting about stuff I'm working on and things I enjoy. 
-          More to come soon...
-        </p>
-        <p>
-          In the meantime, you can find me on{' '}
-          <a href="https://linkedin.com/in/chengzhouyang">LinkedIn</a>,{' '}
-          or follow my progress on <a href="https://github.com/mch-yang">GitHub</a>.
-        </p>
-      </section>
-      <section className={utilStyles.footer}>
-        <p>
-          © <time>{YEAR}</time> Michael Yang
-        </p>
-      </section>
-    </Layout>
-  )
+  return(
+    <Container>
+      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+        <div className="flex flex-col-reverse sm:flex-row items-start">
+          <div className="flex flex-col pr-8">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+              Michael Yang
+            </h1>
+            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+              Data Scientist at{' '}
+              <span className="font-semibold">Amazon</span>
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-16">
+              Welcome to my personal webpage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
 }
