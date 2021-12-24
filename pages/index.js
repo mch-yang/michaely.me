@@ -1,4 +1,5 @@
 import Container from '../components/Container'
+import Image from 'next/image'
 
 export default function Home() {
   return(
@@ -14,8 +15,17 @@ export default function Home() {
               <span className="font-semibold">Amazon</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Welcome to my personal webpage.
+              Welcome to my personal website! I will be using this site to share things around my interests such as music, film, photography, and data science. 
             </p>
+          </div>
+          <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
+            <Image
+              alt="Michael Yang"
+              height={176}
+              width={176}
+              src="/images/profile.jpg"
+              className="rounded-full"
+            />
           </div>
         </div>
       </div>
