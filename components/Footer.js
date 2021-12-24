@@ -22,11 +22,14 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/michaelyang96">
-            Twitter
-          </ExternalLink>
           <ExternalLink href="https://github.com/mch-yang">
             GitHub
+          </ExternalLink>
+          <ExternalLink href="https://linkedin.com/mchyang">
+            LinkedIn
+          </ExternalLink>
+          <ExternalLink href="https://twitter.com/michaelyang96">
+            Twitter
           </ExternalLink>
         </div>
       </div>
