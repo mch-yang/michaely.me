@@ -9,16 +9,16 @@ export default function Music() {
   return (
     <Container>
       <div className="flex flex-col grow justify-center items-start max-w-2xl mx-auto pb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+        <h1 className="font-bold text-3xl sm:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Music
         </h1>
 
-        <h2 className="font-bold text-xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+        <h2 className="font-bold text-xl sm:text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Now Playing
         </h2>
         <NowPlaying/>
 
-        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+        <h2 className="font-bold text-xl sm:text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Top Songs
         </h2>
         <div className="mb-[-1.4rem]">
@@ -35,7 +35,7 @@ export default function Music() {
         </div>
         <TopTracks/>
 
-        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+        <h2 className="font-bold text-xl sm:text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Current Favourites
         </h2>
         <Playlist/>

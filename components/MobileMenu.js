@@ -33,7 +33,7 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        className={cn(styles.burger, 'visible md:hidden')}
+        className={cn(styles.burger, 'visible sm:hidden')}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}
