@@ -1,15 +1,23 @@
 import Link from 'next/link'
 
 import Container from '../components/Container';
+import NowPlaying from '../components/NowPlaying';
 import TopTracks from '../components/TopTracks';
+import Playlist from '../components/Playlist';
 
 export default function Music() {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto pb-16">
+      <div className="flex flex-col grow justify-center items-start max-w-2xl mx-auto pb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Music
         </h1>
+
+        <h2 className="font-bold text-xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+          Now Playing
+        </h2>
+        <NowPlaying/>
+
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Top Songs
         </h2>
@@ -26,6 +34,11 @@ export default function Music() {
           </p>
         </div>
         <TopTracks/>
+
+        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+          Current Favourites
+        </h2>
+        <Playlist/>
       </div>
     </Container>
   )
