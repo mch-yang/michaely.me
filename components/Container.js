@@ -42,6 +42,7 @@ export default function Container(props) {
     title: 'Michael Yang',
     description: 'My personal website for sharing projects, writings and samples of my interests.',
     type: 'Website',
+    image: '../public/images/profile.jpg',
     ...customMeta
   };
 
@@ -69,7 +70,8 @@ export default function Container(props) {
           <div className="ml-[-0.60rem]">
             <MobileMenu/>
             <NavItem href="/" text="Home" />
-            <NavItem href="/page" text="Page" />
+            <NavItem href="/music" text="Music" />
+            <NavItem href="/contact" text="Contact" />
           </div>
           <button
             aria-label="Toggle Dark Mode"
