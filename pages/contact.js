@@ -9,7 +9,7 @@ export default function Contact() {
           Contact
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Feel free to get in touch using one of the methods below – I'm always up for a chat! {' '}
+          Feel free to get in touch using one of the methods below – I&apos;m always up for a chat! {' '}
         </p>
         <ContactCard />
       </div>

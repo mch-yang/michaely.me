@@ -22,7 +22,7 @@ export default function ContactCard() {
             <a href="mailto:michael@michaely.me" className="hover:text-blue-500">
               michael@michaely.me
             </a>
-            <a href="https://linkedin.com/in/mchyang" className="hover:text-blue-500" target="_blank">
+            <a href="https://linkedin.com/in/mchyang" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">
               /in/mchyang
             </a>
           </div>
