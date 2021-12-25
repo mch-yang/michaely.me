@@ -25,7 +25,7 @@ export default function Footer() {
           <ExternalLink href="https://github.com/mch-yang">
             GitHub
           </ExternalLink>
-          <ExternalLink href="https://linkedin.com/mchyang">
+          <ExternalLink href="https://linkedin.com/in/mchyang">
             LinkedIn
           </ExternalLink>
           <ExternalLink href="https://twitter.com/michaelyang96">
