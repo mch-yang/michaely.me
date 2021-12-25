@@ -9,7 +9,7 @@ export default function Track(track) {
         rel="noopener noreferrer"
       >
 
-        <p className="text-sm font-bold w-4 mx-2 pb-2 text-right text-gray-400 dark:text-gray-600">
+        <p className="text-sm font-bold w-4 sm:mx-2 pb-2 text-right text-gray-400 dark:text-gray-600">
               {track.ranking}
         </p>
 
@@ -24,13 +24,13 @@ export default function Track(track) {
 
         <div className="flex flex-col pl-2 pb-2">
           <p
-          className="font-medium text-gray-900 dark:text-gray-100 truncate sm:w-96 md:w-full"
+          className="font-medium text-gray-900 dark:text-gray-100 truncate w-52 sm:w-96 md:w-full"
           color="gray.500"
           >
             {track.title}
           </p>
           <p
-          className="text-gray-500 truncate sm:w-96 md:w-full"
+          className="text-gray-500 truncate w-52 sm:w-96 md:w-full"
           color="gray.500"
           >
             {track.artist}
