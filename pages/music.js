@@ -8,7 +8,7 @@ import Playlist from '../components/Playlist';
 export default function Music() {
   return (
     <Container>
-      <div className="flex flex-col grow justify-center items-start max-w-2xl mx-auto pb-16">
+      <div className="flex flex-col w-full grow justify-center items-start max-w-2xl mx-auto pb-16">
         <h1 className="font-bold text-3xl sm:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Music
         </h1>
