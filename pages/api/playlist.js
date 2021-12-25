@@ -1,13 +1,16 @@
 import { getPlaylist } from '../../lib/spotify';
 
+const playlist_id = process.env.PLAYLIST_ID_CURRENT_FAVOURITES;
+
 export default async function handler(req, res) {
-  const response = await getPlaylist('7a18RllWcUOC7VJ8ARIR6E');
+  const response = await getPlaylist(playlist_id);
   const { items } = await response.json();
 
   const tracks = items.map((item) => ({
     artist: item.track.artists.map((_artist) => _artist.name).join(', '),
     songUrl: item.track.external_urls.spotify,
-    title: item.track.name
+    title: item.track.name,
+    imageUrl: item.track.album.images[2].url
   }));
 
   res.setHeader(
